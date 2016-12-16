@@ -13,5 +13,4 @@ function test($data) {
 }
 $a="Name: ".$name."Mobile: ".$mobile."Message: ".$message;
 mail($mailto,"From Preface",$a,$from);
-include("index.html");
 ?>
