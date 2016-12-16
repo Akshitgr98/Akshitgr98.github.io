@@ -1,8 +1,8 @@
 <?php
-$name=test($_POST["Name"]);
-$email=test($_POST["Email"]);
-$message=test($_POST["Message"]);
-$mobile=$_POST["Mobilenumber"];
+$name=test($_GET["Name"]);
+$email=test($_GET["Email"]);
+$message=test($_GET["Message"]);
+$mobile=$_GET["Mobilenumber"];
 $mailto="akshit.grover2016@gmail";
 $from="do_not_reply@akshitgrover.com";
 function test($data) {
@@ -13,4 +13,5 @@ function test($data) {
 }
 $a="Name: ".$name."Mobile: ".$mobile."Message: ".$message;
 mail($mailto,"From Preface",$a,$from);
+header('Location:index.html')
 ?>
